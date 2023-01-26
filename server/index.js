@@ -4,7 +4,7 @@ const port = 8080
 const userRoutes = require('./routes/routes')
 
 
-app.use('/users', userRoutes)
+app.use('/members', userRoutes)
 
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
