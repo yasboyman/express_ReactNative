@@ -27,7 +27,6 @@ router.get('/new', (req, res) => {
 //  Create new user
 router.post('/', async (req, res) => {
   
-  console.log(cypto.randomUUID())
   const member = new Members({
     id: req.body.id,
     name: req.body.name,
