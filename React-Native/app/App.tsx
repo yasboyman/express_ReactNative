@@ -1,25 +1,14 @@
-import {StatusBar} from 'expo-status-bar';
-import {StyleSheet, Text, View} from 'react-native';
-import {NativeBaseProvider, Box, Center, extendTheme} from "native-base";
+import React from 'react';
+import { View, Text } from 'react-native';
 
-const newColorTheme = {
-    brand: {
-        900: "#8287af",
-        800: "#7c83db",
-        700: "#b3bef6",
-    },
+const App = () => {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#10182a' }}>
+            <Text style={{ color: 'white', fontSize: 20, margin: 20 }}>
+                Hello, World!
+            </Text>
+        </View>
+    );
 };
 
-const theme = extendTheme({colors: newColorTheme});
-
-export default function App() {
-    return (
-        <NativeBaseProvider theme={theme}>
-            <Center flex={1}>
-                <Box>Hello world</Box>
-            </Center>
-        </NativeBaseProvider>
-    );
-}
-
-
+export default App;
